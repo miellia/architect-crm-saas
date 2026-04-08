@@ -76,3 +76,19 @@
 }
 body { font-family: 'Inter', sans-serif; }
 h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+
+/* Dropdown animations */
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-4px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-in {
+  animation: fadeInSlideDown 0.15s ease-out forwards;
+}
