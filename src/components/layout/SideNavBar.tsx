@@ -5,7 +5,7 @@ import { Building2, LayoutDashboard, Users, Handshake, BarChart, Settings, Plus 
 import { useCrmStore } from '@/store/useCrmStore';
 
 const navItems = [
-  { href: '/', label: 'Dashboard', icon: LayoutDashboard },
+  { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/contacts', label: 'Contacts', icon: Users },
   { href: '/deals', label: 'Deals', icon: Handshake },
   { href: '#', label: 'Reports', icon: BarChart, disabled: true },

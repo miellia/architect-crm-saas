@@ -6,6 +6,9 @@ Built by Mir Issa Ellia
 - Portfolio: #
 - Contact: miellia.dev@gmail.com
 
+---
+
+
 # Architect CRM
 
 A full-stack CRM platform built with Next.js, MongoDB, and Clerk. Manage contacts, track deals through a visual pipeline, and view performance analytics — all with complete per-user data isolation.

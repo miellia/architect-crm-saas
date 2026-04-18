@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description: 'Enterprise CRM for Architectural Firms',
 };
 
+import RootLayoutContent from '@/components/layout/RootLayoutContent';
+
 export default function RootLayout({
   children,
 }: {
@@ -36,16 +38,9 @@ export default function RootLayout({
             </div>
           </ClerkLoading>
           <ClerkLoaded>
-            <StoreInitializer />
-            <NewRecordModal />
-            <SideNavBar />
-            <main className="md:ml-64 min-h-screen">
-              <TopNavBar />
-              {/* Content Area */}
-              <div className="pt-24 pb-12 px-4 md:px-10 max-w-7xl mx-auto">
-                {children}
-              </div>
-            </main>
+            <RootLayoutContent topBar={<TopNavBar />}>
+              {children}
+            </RootLayoutContent>
           </ClerkLoaded>
         </body>
       </html>
